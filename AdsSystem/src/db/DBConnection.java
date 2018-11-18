@@ -38,6 +38,7 @@ public interface DBConnection {
 	 */
 	public void updateBid(int ad_id, double bid);
 	
+	
 	/**
 	 * create an advertiser
 	 * @param advertiser_name
