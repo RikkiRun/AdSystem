@@ -120,6 +120,7 @@ public class MySQLConnection implements DBConnection{
 
 
 
+
     @Override 
     public void updateBid(int ad_id, double bid) {
     	if (conn == null) {
@@ -138,7 +139,7 @@ public class MySQLConnection implements DBConnection{
     	}
     	System.out.println("update bid done");
     }
-    
+
     
 	@Override
 	public long createAdvertiser(String advertiser_name, double budget) {
