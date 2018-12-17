@@ -118,9 +118,7 @@ public class MySQLConnection implements DBConnection{
 		System.out.println("update budget done");
 	}
 
-
-
-
+	
     @Override 
     public void updateBid(int ad_id, double bid) {
     	if (conn == null) {

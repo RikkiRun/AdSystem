@@ -42,6 +42,10 @@ public class UpdateBid extends HttpServlet {
 	 */
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		DBConnection conn = DBConnectionFactory.getConnection();
+		
+		if(conn == null) {
+			return;
+		}
 
 		try {
 			JSONObject input = RpcHelper.readJsonObject(request);
